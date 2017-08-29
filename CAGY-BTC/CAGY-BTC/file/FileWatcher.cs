@@ -73,7 +73,7 @@ namespace CAGY_BTC
 
         }
         /// <summary>
-        /// 计算当前区块里面的所有输入金额，是否来自于之前的，或者是之前的，区块
+        /// 计算当前区块里面的所有输入金额，是否来自于之前的，或者是之前的之前的，区块
         /// </summary>
         private void CalcBlock()
         {
