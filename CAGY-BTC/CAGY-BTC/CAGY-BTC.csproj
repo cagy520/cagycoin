@@ -61,6 +61,7 @@
     <Compile Include="block\Block.cs" />
     <Compile Include="block\Transaction.cs" />
     <Compile Include="file\FileBlock.cs" />
+    <Compile Include="file\FileWatcher.cs" />
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>

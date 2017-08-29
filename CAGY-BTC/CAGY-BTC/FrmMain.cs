@@ -13,6 +13,7 @@ using System.Windows.Forms;
  * 
  * 检查是否有与当前钱包地址有关的交易，（或者统计所有钱包地址的剩余金额）有收入就显示到钱包上
  * 
+ * 钱包地址就是自己的账号
  * 
  * 转账问题
  * 
@@ -31,6 +32,9 @@ namespace CAGY_BTC
         public FrmMain()
         {
             InitializeComponent();
+            FileWatcher fw = new FileWatcher();
+            fw.Start(Application.StartupPath + "\\block\\");//实时扫描文件夹下面的文件变化
+            blFile.Caption += "Blockchain listen";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,6 +46,12 @@ namespace CAGY_BTC
             b.Nonce = 0;
             b.TimeStamp = DateTime.Now.Ticks;
             b.Bits = 0;
+            b.Transactions = new List<Transaction>();
+            Transaction tx=new Transaction();
+            tx.Coin=50;
+            tx.Address="cagy";
+            tx.TransType=1;//收到50个币
+            b.Transactions.Add(tx);
             FileBlock f = new FileBlock();
             f.CreateBlock(b,0);
         }
