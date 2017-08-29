@@ -1,0 +1,31 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.top-menu {
+    display: inline-block;
+    padding: 0 15px;
+}
+@media (max-width: 767px) {
+    .top-menu {
+        top: 6px;
+        right: 52px;
+        width: 100%;
+    }
+    .top-menu>.navbar-nav>li {
+        float: none!important;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        margin-top: 50px;
+    }
+
+    .top-menu {
+        float: right !important;
+        margin-right: -15px;
+    }
+
+}

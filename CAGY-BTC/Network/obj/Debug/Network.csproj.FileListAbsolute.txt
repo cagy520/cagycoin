@@ -1,0 +1,4 @@
+D:\CAGY-BTC\CAGY-BTC\Network\bin\Debug\Network.dll
+D:\CAGY-BTC\CAGY-BTC\Network\bin\Debug\Network.pdb
+D:\CAGY-BTC\CAGY-BTC\Network\obj\Debug\Network.dll
+D:\CAGY-BTC\CAGY-BTC\Network\obj\Debug\Network.pdb

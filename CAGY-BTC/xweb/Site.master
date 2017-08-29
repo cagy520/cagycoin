@@ -1,0 +1,63 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="xweb.SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NASA-COIN</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" /> 
+    <link href="~/Content/Site.css" rel="stylesheet" /> 
+
+    <script type="text/javascript" src="/Scripts/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <form runat="server">
+        
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topMenu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">NASA-COIN</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="topMenu">
+                        <dx:BootstrapMenu ID="TopMenu" runat="server" ShowPopOutImages="True" ItemAutoWidth="false" ClientInstanceName="topMenu">
+                            <CssClasses Control="top-menu" Menu="navbar-nav" />
+                            <Items>
+                                <dx:BootstrapMenuItem Text="Home" Name="Home">
+                                </dx:BootstrapMenuItem>
+                                <dx:BootstrapMenuItem Text="About" Name="About">
+                                </dx:BootstrapMenuItem>
+                                <dx:BootstrapMenuItem Text="Contact" Name="Contact">
+                                </dx:BootstrapMenuItem>
+                                <dx:BootstrapMenuItem Text="Register" Name="Register">
+                                </dx:BootstrapMenuItem>
+                                <dx:BootstrapMenuItem Text="Login" Name="Login">
+                                </dx:BootstrapMenuItem>
+                            </Items>
+                        </dx:BootstrapMenu>
+
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container">
+                <asp:ContentPlaceHolder ID="Content" runat="server">
+                </asp:ContentPlaceHolder>
+            
+                <hr>
+
+                <footer>
+                    <p>&copy; <%: DateTime.Now.Year %> - Cagy ASP.NET&amp;Bootstrap project copyright</p>
+                </footer>
+            </div>
+    </form>
+</body>
+</html>
