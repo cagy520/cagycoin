@@ -30,15 +30,15 @@
                         <dx:BootstrapMenu ID="TopMenu" runat="server" ShowPopOutImages="True" ItemAutoWidth="false" ClientInstanceName="topMenu">
                             <CssClasses Control="top-menu" Menu="navbar-nav" />
                             <Items>
-                                <dx:BootstrapMenuItem Text="Home" Name="Home">
+                                <dx:BootstrapMenuItem Text="ึ๗าณ" Name="Home">
                                 </dx:BootstrapMenuItem>
-                                <dx:BootstrapMenuItem Text="About" Name="About">
+                                <dx:BootstrapMenuItem Text=" " Name="About">
                                 </dx:BootstrapMenuItem>
-                                <dx:BootstrapMenuItem Text="Contact" Name="Contact">
+                                <dx:BootstrapMenuItem Text=" " Name="Contact">
                                 </dx:BootstrapMenuItem>
-                                <dx:BootstrapMenuItem Text="Register" Name="Register">
+                                <dx:BootstrapMenuItem Text=" " Name="Register">
                                 </dx:BootstrapMenuItem>
-                                <dx:BootstrapMenuItem Text="Login" Name="Login">
+                                <dx:BootstrapMenuItem Text=" " Name="Login">
                                 </dx:BootstrapMenuItem>
                             </Items>
                         </dx:BootstrapMenu>
@@ -55,7 +55,7 @@
                 <hr>
 
                 <footer>
-                    <p>&copy; <%: DateTime.Now.Year %> - Cagy ASP.NET&amp;Bootstrap project copyright</p>
+                    <p>&copy; <%: DateTime.Now.Year %> - Cagy ASP.NET&amp;Bootstrap Copyright</p>
                 </footer>
             </div>
     </form>
